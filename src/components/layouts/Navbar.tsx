@@ -1,3 +1,4 @@
+import { Link } from '@tanstack/react-router';
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -12,14 +13,18 @@ const Navbar = () => {
       <NavigationMenu className="h-16 w-full max-w-7xl mx-auto  flex justify-end items-center">
         <NavigationMenuList className="space-x-3">
           <NavigationMenuItem>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Home
-            </NavigationMenuLink>
+            <Link to="/">
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Home
+              </NavigationMenuLink>
+            </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              About
-            </NavigationMenuLink>
+            <Link to="/about">
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                About
+              </NavigationMenuLink>
+            </Link>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
