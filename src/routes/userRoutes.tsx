@@ -1,6 +1,7 @@
 import { Route } from '@tanstack/react-router';
 import { rootRoute } from './rootRoute';
 import Home from '@/pages/Home';
+import About from '@/pages/About';
 
 const indexRoute = new Route({
   getParentRoute: () => rootRoute,
@@ -11,7 +12,7 @@ const indexRoute = new Route({
 const aboutRoute = new Route({
   getParentRoute: () => rootRoute,
   path: '/about',
-  component: () => <Home />,
+  component: () => <About />,
 });
 
 const userRoutes = [indexRoute, aboutRoute];

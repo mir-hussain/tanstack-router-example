@@ -2,7 +2,6 @@ import { Link } from '@tanstack/react-router';
 import {
   NavigationMenu,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from '../ui/navigation-menu';
